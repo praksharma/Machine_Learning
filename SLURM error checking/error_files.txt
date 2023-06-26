@@ -1,0 +1,12 @@
+/scratch/s.1915438/nht_b/6. final hyperparameter tuning/2. 3D heat conduction/3. MFNN/tanh/batch_error.log
+/scratch/s.1915438/nht_b/6. final hyperparameter tuning/2. 3D heat conduction/3. MFNN/sin/batch_error.log
+/scratch/s.1915438/nht_b/6. final hyperparameter tuning/2. 3D heat conduction/3. MFNN/relu/batch_error.log
+/scratch/s.1915438/nht_b/6. final hyperparameter tuning/2. 3D heat conduction/3. MFNN/gelu/batch_error.log
+/scratch/s.1915438/nht_b/6. final hyperparameter tuning/2. 3D heat conduction/3. MFNN/selu/batch_error.log
+/scratch/s.1915438/nht_b/6. final hyperparameter tuning/2. 3D heat conduction/1. DGM/relu/batch_error.log
+/scratch/s.1915438/nht_b/6. final hyperparameter tuning/2. 3D heat conduction/1. DGM/gelu/batch_error.log
+/scratch/s.1915438/nht_b/6. final hyperparameter tuning/1. 2D heat conduction/3. MFNN/tanh/batch_error.log
+/scratch/s.1915438/nht_b/6. final hyperparameter tuning/1. 2D heat conduction/3. MFNN/sin/batch_error.log
+/scratch/s.1915438/nht_b/6. final hyperparameter tuning/1. 2D heat conduction/3. MFNN/relu/batch_error.log
+/scratch/s.1915438/nht_b/6. final hyperparameter tuning/1. 2D heat conduction/3. MFNN/gelu/batch_error.log
+/scratch/s.1915438/nht_b/6. final hyperparameter tuning/1. 2D heat conduction/3. MFNN/selu/batch_error.log
