@@ -9,10 +9,11 @@ wandb.alert(
 )
 ```
 This is the message sent to the Slack channel.
+
 ![Alt text](image.png)
 
 The first message is alert and second one is for run finished.
 
-In addition to this, if the job fails due to timelimit of any error we will see the following message.
+In addition to this, if the job fails due to timelimit of any error we will see the `Failed` in Status.
 
 ![Alt text](image-1.png)
