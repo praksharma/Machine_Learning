@@ -1,0 +1,8 @@
+method: grid
+parameters:
+  optimizer:
+    values: ["adam"]
+  fc_layer_size:
+    values: [128]
+  dropout:
+    values: [0.3]
