@@ -63,3 +63,5 @@ The command `wandb agent` will arg parse the configs to `__main__` and will be a
 Now we can submit the same job script multple times and SLURM will assign separate GPU for each job. If you execute 4 jobs you will see 4 workers in WandB web portal.
 
 ![Alt text](image-1.png)
+
+All you need to do is repeatedly run the same script multiple times to add more agents/ workers.
