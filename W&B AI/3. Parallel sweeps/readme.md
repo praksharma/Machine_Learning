@@ -65,3 +65,17 @@ Now we can submit the same job script multple times and SLURM will assign separa
 ![Alt text](image-1.png)
 
 All you need to do is repeatedly run the same script multiple times to add more agents/ workers.
+
+Once all the sweeps are finished, you will see this in the error.log of sbatch.
+
+```sh
+wandb: Starting wandb agent 🕵️
+wandb: ERROR Error while calling W&B API: Sweep prakhars962/parallel_try_2/6m61zudj is not running (<Response [400]>)
+wandb: ERROR Find detailed error logs at: /scratch/s.1915438/k/wandb/debug-cli.s.1915438.log
+Error: Sweep prakhars962/parallel_try_2/6m61zudj is not running
+```
+
+On the web portal you will see `Finished` in the controls tab.
+
+![Alt text](image-2.png)
+
