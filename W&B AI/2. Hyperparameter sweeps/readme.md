@@ -57,16 +57,14 @@ parameters_dict.update({
 ## Early termination
 We can use [Hyperband](https://arxiv.org/pdf/1603.06560.pdf) scheduling algorithm for early termination.
 
-![Alt text](image.png)
-
-We the main sweep controller is on the W&B server and agents run on our local machine. Will have to look what we can leverage with this design.
+The main sweep controller is on the W&B server and agents run on our local machine. Will have to look what we can leverage with this design.
 
 ## Delay in results
 The server might take 10-15 mins to display the results on the web portal. This makes more sense when models might take hours for 1 run.
 
-![Alt text](image-1.png)
+![Alt text](image.png)
 
 We can plot various things such as parallel coordinate plot from the "Add Panel" button workspaces.
 
-![Alt text](image-2.png)
+![Alt text](image-1.png)
 

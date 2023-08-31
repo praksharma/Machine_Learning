@@ -8,3 +8,4 @@ Quick start guide: https://docs.wandb.ai/quickstart
 1. [Introduction](https://colab.research.google.com/github/wandb/examples/blob/master/colabs/intro/Intro_to_Weights_%26_Biases.ipynb)
 2. [Hyperparameter sweep and visualisation](https://colab.research.google.com/github/wandb/examples/blob/master/colabs/pytorch/Organizing_Hyperparameter_Sweeps_in_PyTorch_with_W%26B.ipynb)
 3. [Artifacts](https://colab.research.google.com/github/wandb/examples/blob/master/colabs/wandb-artifacts/Pipeline_Versioning_with_W&B_Artifacts.ipynb)
+4. [Parallel sweeps](https://docs.wandb.ai/guides/sweeps/parallelize-agents)
