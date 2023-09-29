@@ -6,21 +6,21 @@
 (✅ denotes sections that were finished)
 
 Introduction
-* ⌨️ (0:00:00) Welcome ✅
-* ⌨️ (0:05:54) Prerequisite
-* ⌨️ (0:06:11) What we shall Learn
+* [x] ⌨️ (0:00:00) Welcome
+* [x] ⌨️ (0:05:54) Prerequisite
+* [x] ⌨️ (0:06:11) What we shall Learn
 
 Tensors and Variables
-* ⌨️ (0:12:12) Basics
-* ⌨️ (0:19:26) Initialization and Casting
-* ⌨️ (1:07:31) Indexing
-* ⌨️ (1:16:15) Maths Operations
-* ⌨️ (1:55:02) Linear Algebra Operations
-* ⌨️ (2:56:21) Common TensorFlow Functions
-* ⌨️ (3:50:15) Ragged Tensors
-* ⌨️ (4:01:41) Sparse Tensors
-* ⌨️ (4:04:23) String Tensors
-* ⌨️ (4:07:45) Variables
+* [x] ⌨️ (0:12:12) Basics
+* [x] ⌨️ (0:19:26) Initialization and Casting
+* [x] ⌨️ (1:07:31) Indexing
+* [x] ⌨️ (1:16:15) Maths Operations
+* [x] ⌨️ (1:55:02) Linear Algebra Operations
+* [x] ⌨️ (2:56:21) Common TensorFlow Functions
+* [x] ⌨️ (3:50:15) Ragged Tensors
+* [x] ⌨️ (4:01:41) Sparse Tensors
+* [x] ⌨️ (4:04:23) String Tensors
+* [x] ⌨️ (4:07:45) Variables
 
 Building Neural Networks with TensorFlow [Car Price Prediction]
 * ⌨️ (4:14:52) Task Understanding
