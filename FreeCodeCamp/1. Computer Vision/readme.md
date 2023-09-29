@@ -3,7 +3,6 @@
 * Author: Folefac Martins from Neuralearn.ai
 
 ## ⭐️ Contents ⭐️
-(✅ denotes sections that were finished)
 
 Introduction
 * [x] ⌨️ (0:00:00) Welcome
