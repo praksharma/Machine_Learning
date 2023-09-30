@@ -174,4 +174,37 @@ You should get an output similar to this:
  PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
 ```
 
-PEACE
+## Installing packages
+So, Tensorflow's docker image doesn't include essential packages such as `pandas`, `seaborn`, `matplotlib` etc.
+
+Start an interactive bash terminal inside the docker image using this command:
+```sh
+ docker run -it  --runtime=nvidia tensorflow/tensorflow:latest-gpu-jupyter /bin/bash
+ ```
+
+ Now install anything you like to.
+ ```sh
+ pip3 install pandas, numpy, seaborn, matplotlib
+ ```
+
+Don't close the interactive session. Open a new terminal and type the following to see a lit of active containers.
+
+```sh
+docker container ls
+```
+You should see something like this.
+```sh
+╰─ docker container ls                                                       ─╯
+CONTAINER ID   IMAGE                                      COMMAND                  CREATED         STATUS         PORTS                                       NAMES
+5d81a1fcd9cb   tensorflow/tensorflow:latest-gpu-jupyter   "/bin/bash"              3 minutes ago   Up 3 minutes   8888/tcp                                    sweet_poitras
+e2de8ead53a3   tensorflow/tensorflow:latest-gpu-jupyter   "bash -c 'source /et…"   5 hours ago     Up 5 hours     0.0.0.0:8888->8888/tcp, :::8888->8888/tcp   unruffled_curran
+```
+
+Now note down the container ID of the active container. Now we will write the changes made to the container to a new image.
+
+```sh
+╰─ sudo docker commit 5d81a1fcd9cb tf_ml                                                                                           ─╯
+sha256:773e0145d7965a1f67f1c89d16a5c459e4b8c0de064cebfe7aeb937f7f4932cb
+```
+
+Now the newly created docker image should reflect the changes made in the container.
