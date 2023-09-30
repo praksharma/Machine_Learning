@@ -141,3 +141,37 @@ Image Generation
 
 Conclusion
 * ⌨️ (37:15:45) What's Next
+
+## Using Tensorflow on a GPU without any errors
+Looks like Tensorflow still doesn't connect to every single GPU OOTB. The easiest way to use Tensorflow is to use their docker image.
+
+There are three types of docker images available for [Tensorflow](https://hub.docker.com/r/tensorflow/tensorflow/) ending with:
+* latest
+* latest-gpu
+* latest-gpu-jupyter
+
+In this case I am using the last one. First, pull the image.
+```sh
+docker pull tensorflow/tensorflow:latest-gpu-jupyter 
+```
+Run the container with a jupyter server:
+
+```sh
+docker run -it --rm --runtime=nvidia tensorflow/tensorflow:latest-gpu-jupyter
+```
+Here we don't need to bind any path, we will do this in VS Code. In fact, VS Code has its own Docker container extension, but I couldn't find a way to add the `--runtime` flag.
+
+Now open the VS Code in your project directory. Open the Jupyter notebook. Now on the top right corner where says "Select kernel". Click there and choose "Select another kernel" then "Existing Jupyter server". In the box that pops up, just paste the entire URL from the terminal.
+
+Now run this to confirm that your GPU is recognised.
+```python
+Import tensorflow as tf
+tf. config. list_physical_devices()
+```
+
+You should get an output similar to this:
+
+```python
+[PhysicalDevice(name='/physical_device:CPU:0', device_type='CPU'),
+ PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
+```
