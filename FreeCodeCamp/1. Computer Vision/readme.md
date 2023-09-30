@@ -155,7 +155,7 @@ docker pull tensorflow/tensorflow:latest-gpu-jupyter
 Run the container with a jupyter server:
 
 ```sh
-docker run -it --rm --runtime=nvidia tensorflow/tensorflow:latest-gpu-jupyter
+docker run -it --rm -p 8888:8888 tensorflow/tensorflow:latest-gpu-jupyter
 ```
 Here we don't need to bind any path, we will do this in VS Code. In fact, VS Code has its own Docker container extension (pre-installed), but I couldn't find a way to add the `--runtime` flag.
 
@@ -208,3 +208,5 @@ sha256:773e0145d7965a1f67f1c89d16a5c459e4b8c0de064cebfe7aeb937f7f4932cb
 ```
 
 Now the newly created docker image should reflect the changes made in the container.
+
+Ok the newly created image has some issues. In fact the old docker images doesn't recognise the GPU. Tensorflow is still painful in 2023. So, now I will use Google Collab instead of wasting time installing it. :(
