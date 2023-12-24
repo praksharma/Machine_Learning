@@ -1,4 +1,5 @@
 **/wandb/
+.venv
 # Prerequisites
 *.d
 
