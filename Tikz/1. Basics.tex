@@ -1,0 +1,14 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{tikz}
+\begin{document}
+\begin{tikzpicture}
+	\draw (0,0) -- (1,1);
+	\draw (0,0) -- (2,0) -- (2,2) -- (0,2) -- cycle;
+	\draw (0,0) rectangle (3,3);
+	\draw (0,0) parabola (2,2);
+	\draw (0,0) .. controls (0,3) and (3,0) .. (3,3);
+	\draw (2,2) circle (2mm);
+	\draw (2,2) ellipse (0.5cm and 1cm);
+	\draw (3,0) arc (0:90:3); % starting angle, the ending angle and the radius.
+\end{tikzpicture}
+\end{document}

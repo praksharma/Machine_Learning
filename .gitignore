@@ -33,3 +33,9 @@
 *.app
 
 **/wandb/
+
+# latex modules
+*.aux
+*.bbl
+*.log
+*.gz
